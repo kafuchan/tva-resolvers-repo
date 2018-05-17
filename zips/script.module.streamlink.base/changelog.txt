@@ -1,3 +1,14 @@
++ 2018.05.18
+- Bumped to latest commit
+- Tweaks in shutil which compat backport library
+
++ 2018.05.17
+- Bumped to latest commit
+- Fixes in which util
+
++ 2018.05.16
+- Bumped to latest commit
+
 + 2018.02.24
 - Fixed segmented module (ignore-names commit)
 - Bumped to commit #3b7dae75d924caa94d5d2e023b85959f0ac8ef39
