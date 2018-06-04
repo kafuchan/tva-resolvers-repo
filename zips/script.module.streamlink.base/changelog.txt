@@ -1,3 +1,17 @@
++ 2018.06.04
+- Updated facebook plugin to support VOD
+
++ 2018.06.03
+- Bumped to commit d653d56
+- Updated facebook plugin to support DASH
+- Improved DASH
+
++ 2018.06.01
+- Bumped to commit d653d56
+- MPEG-DASH support added
+- New logging system
+- Various updates to plugins
+
 + 2018.05.21
 - Updates to plugins pulled from upstream
 - Removed _version module and replaced debug info of version with the one Kodi provides
