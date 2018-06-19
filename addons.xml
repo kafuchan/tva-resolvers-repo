@@ -219,7 +219,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.0.1" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.0.5" provider-name="Twilight0">
 	<requires>
 		<import addon="xbmc.python" version="2.24.0"/>
 	</requires>
@@ -236,8 +236,13 @@
   > Added compat module to allow several modules imports compatibility
   > Several other related tweaks
 - Improved youtube module to allow more results from video lists and playlists
+  > Tweaks and cosmetics added as well
+- Improved directory module by having utf-8 encoding optional via exception
 - Added support for resolveurl into youtube module
-- Added login support for client.request module</news>
+- Added login support for client.request module
+- Added orderdict conditional into compat module
+- Added multiprocess support along with multithreading into workers module
+  > Will not work on Android so fallback to threading has been added</news>
 	</extension>
 </addon>
 
@@ -307,11 +312,11 @@
   </extension>
 </addon>
 
-<addon id="service.streamlink.proxy" name="Streamlink Proxy" version="4.1.1" provider-name="Twilight0">
+<addon id="service.streamlink.proxy" name="Streamlink Proxy" version="4.1.2" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
-        <import addon="script.module.streamlink.base" version="2017.02.15"/>
-        <import addon="script.module.streamlink.plugins" version="1.0.3"/>
+        <import addon="script.module.streamlink.base" version="2018.06.12"/>
+        <!--<import addon="script.module.streamlink.plugins" version="1.0.3"/>-->
     </requires>
     <extension point="xbmc.service" library="resources/lib/service.py" start="login"/>
     <extension point="xbmc.python.pluginsource" library="options.py">
@@ -329,8 +334,8 @@
         <assets>
             <icon>icon.png</icon>
         </assets>
-        <news>+ 4.1.1
-- Added plugins here as dependency, instead of base module
+        <news>+ 4.1.2
+- Removed plugins dependency
 - Bumped base module dependency to latest</news>
     </extension>
 </addon>
