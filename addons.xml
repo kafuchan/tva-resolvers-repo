@@ -89,6 +89,22 @@
 	</extension>
 </addon>
 
+<addon id="script.module.jsbeautifier" name="jsbeautifier" version="1.8.8" provider-name="jsergio">
+    <requires>
+        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="script.module.six" version="1.6.1" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.addon.metadata">
+        <summary>Written by Einar Lielmanis, maintained and evolved by Liam Newman.</summary>
+        <description>Beautify, unpack or deobfuscate JavaScript. Handles popular online obfuscators.</description>
+        <platform>all</platform>
+        <license>MIT</license>
+        <source>https://pypi.org/project/jsbeautifier/</source>
+        <website>https://beautifier.io/</website>
+    </extension>
+</addon>
+
 <addon id="script.module.liveresolver"
      name="LiveResolver"
      version="0.1.49"
@@ -108,7 +124,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.m7lib" name="mhancoc7 Common Functions" provider-name="mhancoc7" version="0.1.2">
+<addon id="script.module.m7lib" name="mhancoc7 Common Functions" provider-name="mhancoc7" version="0.1.5">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="plugin.video.youtube" version="5.5.1"/>
@@ -173,7 +189,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.resolveurl.xxx" version="2.0.02" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
+<addon id="script.module.resolveurl.xxx" version="2.0.03" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
         <import addon="script.module.resolveurl" version="5.0.00" />
