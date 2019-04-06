@@ -1,3 +1,31 @@
+[B]Version 0.5.6[/B]
+- Removed CNBC
+
+[B]Version 0.5.5[/B]
+- Started adding support for Python 3
+
+[B]Version 0.5.4[/B]
+- Removed unused import
+
+[B]Version 0.5.3[/B]
+- Fixed missing images in Animal TV
+
+[B]Version 0.5.2[/B]
+- Updated server connections
+
+[B]Version 0.5.1[/B]
+- Minor update for Animal TV
+
+[B]Version 0.5.0[/B]
+- Fixed issue with Live streams being marked as watched
+
+[B]Version 0.4.9[/B]
+- Removed YouTube MPEGDASH requirement for YouTube Live streams, It doesn't seem to be needed any longer
+
+[B]Version 0.4.8[/B]
+- Minor refactoring
+- Added function to get streams for Animal TV
+
 [B]Version 0.4.7[/B]
 - Updated logos
 

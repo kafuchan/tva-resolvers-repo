@@ -264,7 +264,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.m7lib" name="mhancoc7 Common Functions" provider-name="mhancoc7" version="0.4.7">
+<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.5.6">
     <requires>
         <import addon="xbmc.python" version="2.20.0"/>
         <import addon="plugin.video.youtube" version="5.5.1"/>
@@ -273,14 +273,8 @@
     <extension point="xbmc.addon.metadata">
         <description lan="en">mhancoc7 Common Functions</description>
         <summary lang="en">mhancoc7 Common Functions</summary>
-        <disclaimer lang="en"></disclaimer>
         <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
         <platform>all</platform>
-        <email></email>
-        <website></website>
-        <forum></forum>
-        <source></source>
-        <language></language>
     </extension>
 </addon>
 
@@ -376,7 +370,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.4" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.5" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -394,6 +388,7 @@
 - Replaced builtin eval with ast.literaleval which is more secure
 - Added the fuzzywuzzy library for fuzzy string matching
 - Moved all user agent related functions and strings into new user_agent module
+- Added datetime keys for youtube videos
 - Various other tweaks
 
 [B]2.2.X[/B]
