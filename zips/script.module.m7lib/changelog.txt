@@ -1,3 +1,22 @@
+[B]Version 0.6.8[/B]
+- Refactored to simplify get_stream_and_play function
+
+[B]Version 0.6.7[/B]
+- Added '# nosec' to suppress bandit warning since this is not used for security/cryptographic purposes.
+
+[B]Version 0.6.6[/B]
+- Added '# nosec' to suppress bandit warnings since the code is not accepting non-http schemes
+
+[B]Version 0.6.5[/B]
+- Added check for 'http' when using Urllib urlopen
+- Fixed issue with Redefining built-in 'type'
+
+[B]Version 0.6.4[/B]
+- Fixed nonetype exception
+
+[B]Version 0.6.3[/B]
+- Fixed bare exception
+
 [B]Version 0.6.2[/B]
 - Refactored Tubi TV functions a bit
 
