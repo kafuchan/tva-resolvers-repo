@@ -214,7 +214,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.28" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.29" provider-name="jsergio">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -231,19 +231,6 @@
 		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
 		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
 		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
-</addon>
-
-<addon id="script.module.resolveurl.xxx" version="2.0.03" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.resolveurl" version="5.0.00" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.addon.metadata">
-		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
-		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
-		<platform>all</platform>
 	</extension>
 </addon>
 
@@ -264,7 +251,20 @@
   </extension>
 </addon>
 
-<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.6.8">
+<addon id="script.module.resolveurl.xxx" version="2.0.03" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.module.resolveurl" version="5.0.00" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</summary>
+		<description lang="en">Resolve adult video host URL's to be playable in XBMC/Kodi.</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.7.0">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="plugin.video.youtube" version="5.5.1" />
@@ -405,7 +405,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.34" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.35" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
