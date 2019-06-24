@@ -1,16 +1,37 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.05.08" provider-name="Streamlink Devs, Twilight0">
+<addon id="script.module.js2py" name="js2py" version="0.6.3" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.six" version="1.11.0"/>
+    <import addon="script.module.pyjsparser" version="2.7.1"/>
+    <import addon="script.module.tzlocal" version="1.5.1"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/Js2Py</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/Js2Py</website>
+    <source>https://github.com/PiotrDabkowski/Js2Py</source>
+    <email></email>
+  </extension>
+</addon>
+
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2019.06.23" provider-name="Streamlink Devs, Twilight0">
   <requires>
       <import addon="xbmc.python" version="2.24.0"/>
       <import addon="script.module.requests" version="2.12.4"/>
       <import addon="script.module.futures" version="2.2.0"/>
-      <import addon="script.module.streamlink.crypto" version="1.5.2"/>
+      <import addon="script.module.cryptolib" version="1.0.0"/>
   </requires>
   <extension point="xbmc.python.module" library="resources/lib/"/>
   <extension point="xbmc.addon.metadata">
-      <summary>Streamlink Library</summary>
-      <description>Streamlink Library for Kodi. Known issue: Does not work on Xbox, when trying to import something from ctypes module.</description>
+      <summary>Streamlink Library for Kodi</summary>
+      <description>Streamlink Library for Kodi. It is a collection of plugins to help resolve web page urls into streamable links. Known issue: Does not work on Xbox, specifically throws exception when trying to import something from ctypes module.</description>
       <platform>all</platform>
       <license>Simplified BSD</license>
       <source>https://github.com/Twilight0/script.module.streamlink.base/</source>
@@ -18,13 +39,9 @@
       <assets>
           <icon>icon.png</icon>
       </assets>
-      <news>+2019.05.08
-- Added vimeo plugin
-
-+2019.05.03
-- Bumped to upstream commit c8ed1daff14ac03195870238b9b900c1109dd5c1
-- Include PR #2441 from upstream
-- Add exception for ctypes on namedpipe for XBOX (MemoryError). So its a known issue that streamlink does not work on this platform</news>
+      <news>+2019.06.23
+- Changed crypto module addon id
+- Updated description</news>
   </extension>
 </addon>
 
@@ -90,6 +107,19 @@
         <forum>http://tvaddons.co/forums</forum>
         <website>http://www.tvaddons.co/</website>
     </extension>
+</addon>
+
+<addon id="script.module.cryptolib" name="Crypto Libraries" version="1.0.0" provider-name="Twilight0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python implementation of some cryptographic libraries</summary>
+    <source>https://github.com/Twilight0/script.module.cryptolib</source>
+    <platform>all</platform>
+    <license>MIT</license>
+  </extension>
 </addon>
 
 <addon id="script.module.librarypack" name="Library Pack" version="1.0.0" provider-name="tvaddons">
@@ -170,6 +200,25 @@
 	</extension>
 </addon>
 
+<addon id="script.module.tzlocal" name="tzlocal" version="1.5.1" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+    <import addon="script.module.pytz" version="2014.2"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Python Module to find out the current time zone</summary>
+    <description>Packed for Kodi from https://github.com/regebro/tzlocal</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/regebro/tzlocal</website>
+    <source>https://github.com/regebro/tzlocal</source>
+    <email></email>
+  </extension>
+</addon>
+
 <addon id="script.module.metahandler"
      name="metahandler"
      version="3.0.2"
@@ -211,24 +260,25 @@
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.31" provider-name="jsergio">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-	</extension>
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.32" provider-name="jsergio">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+    </extension>
 </addon>
 
 <addon id="script.module.streamlink.plugins" name="Streamlink Plugins" version="1.0.3" provider-name="Twilight0">
@@ -245,6 +295,24 @@
     <source>https://github.com/Twilight0/script.module.streamlink.plugins</source>
     <!--<website></website>-->
     <!--<language></language>-->
+  </extension>
+</addon>
+
+<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.1" provider-name="Addons4Kodi">
+  <requires>
+    <import addon="xbmc.python" version="2.25.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary>Pure Python JavaScript Translator/Interpreter</summary>
+    <description>Packed for Kodi from https://github.com/PiotrDabkowski/pyjsparser</description>
+    <platform>all</platform>
+    <language></language>
+    <license>MIT</license>
+    <forum></forum>
+    <website>https://github.com/PiotrDabkowski/pyjsparser</website>
+    <source>https://github.com/PiotrDabkowski/pyjsparser</source>
+    <email></email>
   </extension>
 </addon>
 
@@ -366,7 +434,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.7" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.8" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -386,6 +454,7 @@
 - Moved all user agent related functions and strings into new user_agent module
 - Added datetime keys for youtube videos
 - Compat module enhancements
+- Cleantitle module enhancements
 - Directory module bugfixes
 - Added replace xml codes function
 - Various other tweaks
@@ -405,25 +474,26 @@
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.36" provider-name="tvaddons">
-	<requires>
-		<import addon="xbmc.python" version="2.1.0" />
-		<import addon="plugin.video.youtube" optional="true" />
-		<import addon="script.module.python.twitch" optional="true" />
-		<import addon="script.module.cryptopy" version="1.2.6" optional="true" />
-		<import addon="plugin.video.gdrive" optional="true" />
-	</requires>
-	<extension point="xbmc.python.module" library="lib" />
-	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
-		<summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
-		<description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
-		<forum>https://www.tvaddons.co/forums</forum>
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.37" provider-name="tvaddons">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0" />
+        <import addon="plugin.video.youtube" optional="true" />
+        <import addon="script.module.python.twitch" optional="true" />
+        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
+        <import addon="plugin.video.gdrive" optional="true" />
+    </requires>
+    <extension point="xbmc.python.module" library="lib" />
+    <extension point="xbmc.python.pluginsource" library="lib/default.py" />
+    <extension point="xbmc.addon.metadata">
+        <platform>all</platform>
+        <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+        <summary lang="es">Resolver enlaces a videos de sitios populares para poder reproducirlos en XBMC/Kodi.</summary>
+        <summary lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
+        <summary lang="el">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
+        <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="hr">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <forum>https://www.tvaddons.co/forums</forum>
         <website>https://www.tvaddons.co</website>
-	</extension>
+    </extension>
 </addon>
 </addons>
