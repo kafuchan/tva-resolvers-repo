@@ -7,8 +7,10 @@
 - Added datetime keys for youtube videos
 - Compat module enhancements
 - Cleantitle module enhancements
+- Request function enhancements for python 3
 - Directory module bugfixes
 - Added replace xml codes function
+- Youtube module performance tweaks
 - Various other tweaks
 
 [B]2.2.X[/B]

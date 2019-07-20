@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="script.module.js2py" name="js2py" version="0.6.3" provider-name="Addons4Kodi">
+<addon id="script.module.js2py" name="js2py" version="0.6.6" provider-name="Addons4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.six" version="1.11.0"/>
@@ -200,7 +200,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.tzlocal" name="tzlocal" version="1.5.1" provider-name="Addons4Kodi">
+<addon id="script.module.tzlocal" name="tzlocal" version="1.5.2" provider-name="Addons4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
     <import addon="script.module.pytz" version="2014.2"/>
@@ -298,7 +298,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.1" provider-name="Addons4Kodi">
+<addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.2" provider-name="Addons4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
   </requires>
@@ -434,7 +434,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.8" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.3.12" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -455,8 +455,10 @@
 - Added datetime keys for youtube videos
 - Compat module enhancements
 - Cleantitle module enhancements
+- Request function enhancements for python 3
 - Directory module bugfixes
 - Added replace xml codes function
+- Youtube module performance tweaks
 - Various other tweaks
 
 [B]2.2.X[/B]
