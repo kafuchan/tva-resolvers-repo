@@ -109,7 +109,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.indigo" version="4.0.14" name="Indigo" provider-name="tvaddons">
+<addon id="plugin.program.indigo" version="4.0.15" name="Indigo" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -448,7 +448,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.5.0" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Routine Libraries" version="2.5.7" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -477,7 +477,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.50" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.51" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
