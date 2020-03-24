@@ -94,6 +94,28 @@
   </extension>
 </addon>
 
+<addon id="script.module.cloudscraper" name="CloudScraper2" version="1.2.24" provider-name="venomous">
+  <requires>
+    <import addon="xbmc.python" version="2.26.0"/>
+    <import addon="script.module.requests" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.python.pluginsource" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <summary lang="en_gb">cloudscraper</summary>
+    <description lang="en_gb">cloudscraper</description>
+    <disclaimer lang="en_gb"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
 <addon id="script.module.commoncore" name="CommonCore" provider-name="tvaddons" version="1.2.5">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
@@ -305,7 +327,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.38" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.39" provider-name="jsergio">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -522,7 +544,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.58" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.59" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
