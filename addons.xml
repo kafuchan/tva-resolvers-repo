@@ -135,7 +135,7 @@
     </extension>
 </addon>
 
-<addon id="plugin.program.indigo" version="4.0.17" name="Indigo" provider-name="tvaddons">
+<addon id="plugin.program.indigo" version="4.0.18" name="Indigo" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
 	</requires>
@@ -257,33 +257,6 @@
     <source>https://github.com/regebro/tzlocal</source>
     <email></email>
   </extension>
-</addon>
-
-<addon id="program.fuck.indigo" name="Prevent Issues" version="2.0.0" provider-name="tvaddons">
-	<requires>
-		<import addon="xbmc.python" version="2.14.0"/>
-	</requires>
-	<extension point="xbmc.python.script" library="addon.py">
-		<provides>executable</provides>
-	</extension>
-	<extension point="xbmc.addon.metadata">
-		<platform>all</platform>
-		<summary lang="en">Popup Hello World</summary>
-		<description lang="en">Example Script to show hello world</description>
-		<license>GNU General Public License, v2</license>
-		<language></language>
-		<forum>https://www.tvaddons.co/community</forum>
-		<website>https://www.tvaddons.co/</website>
-		<assets>
-			<icon>icon.png</icon>
-			<fanart>fanart.jpg</fanart>
-			<screenshot>resources/screenshot-01.jpg</screenshot>
-			<screenshot>resources/screenshot-02.jpg</screenshot>
-			<screenshot>resources/screenshot-03.jpg</screenshot>
-		</assets>
-		<news>Updated the addon to use new addon.xml metadata</news>
-		<broken>deprecated</broken>
-	</extension>
 </addon>
 
 <addon id="script.module.metahandler"
@@ -544,7 +517,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.62" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.63" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
