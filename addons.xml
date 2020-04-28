@@ -300,7 +300,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.42" provider-name="jsergio">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.44" provider-name="jsergio, gujal">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -369,7 +369,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.8.2">
+<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.8.3">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="plugin.video.youtube" version="5.5.1" />
@@ -517,7 +517,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.63" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.64" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
