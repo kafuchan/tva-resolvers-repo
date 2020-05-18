@@ -300,7 +300,7 @@
     </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.46" provider-name="jsergio, gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.0.47" provider-name="jsergio, gujal">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
@@ -338,6 +338,30 @@
   </extension>
 </addon>
 
+<addon id="script.module.mechanicalsoup"
+	name="MechanicalSoup"
+	version="0.12.0"
+	provider-name="Matthew Hickford, Dan Hemberger, Matthieu Moy">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+		<import addon="script.module.requests" version="2.0.0"/>
+		<import addon="script.module.beautifulsoup4" version="4.4.0"/>
+		<import addon="script.module.six" version="1.4.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">A Python library for automating interaction with websites.</summary>
+		<forum></forum>
+		<website>https://mechanicalsoup.readthedocs.io/</website>
+		<license>MIT</license>
+		<platform>all</platform>
+		<source>https://github.com/MechanicalSoup/MechanicalSoup</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+	</extension>
+</addon>
+
 <addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.2" provider-name="Addons4Kodi">
   <requires>
     <import addon="xbmc.python" version="2.25.0"/>
@@ -356,10 +380,10 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl.xxx" version="2.0.1" name="Adult Resolver SMR Extension" provider-name="jsergio, Echo Coder">
+<addon id="script.module.resolveurl.xxx" version="2.1.0" name="Adult Resolver SMR Extension" provider-name="jsergio, gujal">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.module.resolveurl" version="5.0.00" />
+        <import addon="script.module.resolveurl" version="5.0.0" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
@@ -369,7 +393,28 @@
 	</extension>
 </addon>
 
-<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.8.4">
+<addon id="script.module.pyautogui"
+	name="PyAutoGUI"
+	version="0.9.49"
+	provider-name="Al Sweigart">
+	<requires>
+		<import addon="xbmc.python" version="2.25.0"/>
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en_GB">PyAutoGUI is a cross-platform GUI automation Python module for human beings. Used to programmatically control the mouse and keyboard.</summary>
+		<forum></forum>
+		<website>https://pyautogui.readthedocs.io/</website>
+		<license>see LICENSE.txt</license>
+		<platform>all</platform>
+		<source>https://github.com/asweigart/pyautogui</source>
+        <assets>
+            <icon>icon.png</icon>
+        </assets>
+	</extension>
+</addon>
+
+<addon id="script.module.m7lib" name="m7lib" provider-name="mhancoc7" version="0.8.7">
     <requires>
         <import addon="xbmc.python" version="2.20.0" />
         <import addon="plugin.video.youtube" version="5.5.1" />
@@ -436,11 +481,14 @@
   <extension point="xbmc.python.module"
              library="lib" />
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">A pure python module which implements the DES and Triple-DES encryption algorithms.</summary>
+    <summary lang="en_GB">A pure python module which implements the DES and Triple-DES encryption algorithms.</summary>
     <website>http://twhiteman.netfirms.com/des.html</website>
-    <license>Public Domain</license>
+    <license>MIT</license>
     <platform>all</platform>
     <source>http://sourceforge.net/projects/pydes/</source>
+    <assets>
+      <icon>icon.png</icon>
+    </assets>
   </extension>
 </addon>
 
@@ -517,7 +565,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.0.66" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.0.67" provider-name="tvaddons">
     <requires>
         <import addon="xbmc.python" version="2.1.0" />
         <import addon="plugin.video.youtube" optional="true" />
