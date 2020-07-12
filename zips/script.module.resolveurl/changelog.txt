@@ -1,15 +1,14 @@
-Version 5.1.0 (June 7, 2020)
+Version 5.1.3 (July 10, 2020)
 - Code Base Changes:
-    - Change Init logging to debug level
-    - Addtional helper functions
+    - possible Fix for settings.xml writing on XBox
 
 - Resolvers Added:
-    - Daxab
+    - megogo
+    - oogly
+    - videoapne
  
 - Resolvers Fixed/Updated:
-    - WStream
-    - FEmbed
-    - Debrid-link
+    - None
 
 - Resolvers Removed
     - None
