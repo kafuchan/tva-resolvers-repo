@@ -447,7 +447,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.5" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.6" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>
@@ -675,7 +675,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.6.11" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.6.15" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -697,6 +697,8 @@
 - Allow nextitem to have title and/or name property
 - Add ability to clear all bookmarks at once
 - Add integer labels as optional parameters
+- Moved a few functions from client to other modules
+- Added the quote paths function, useful for non ascii characters in urls
 - A few changes for Kodi 19+
 
 [B]2.5.X[/B]
@@ -723,7 +725,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.5" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.6" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>
