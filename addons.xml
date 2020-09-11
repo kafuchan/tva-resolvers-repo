@@ -21,11 +21,11 @@
   </extension>
 </addon>
 
-<addon id="script.module.streamlink.base" name="Streamlink Library" version="2020.08.09" provider-name="Streamlink Devs, Twilight0">
+<addon id="script.module.streamlink.base" name="Streamlink Library" version="2020.09.07.1" provider-name="Streamlink Devs, Twilight0">
   <requires>
       <import addon="xbmc.python" version="2.26.0"/>
       <import addon="script.module.requests" version="2.12.4"/>
-      <import addon="script.module.futures" version="2.2.0" optional="true"/>
+      <import addon="script.module.futures" version="0.0.0.1"/>
       <import addon="script.module.pycryptodome" />
   </requires>
   <extension point="xbmc.python.module" library="resources/lib/"/>
@@ -39,20 +39,14 @@
       <assets>
           <icon>icon.png</icon>
       </assets>
-      <news>+2020.08.09
+      <news>+2020.09.07.1
 - Update to latest upstream commit
-- Futures module is not set to optional (on Kodi 19 it is not imported)
+- Remove on demand installation of futures module
+- Add dummy futures module for Kodi 19
 
-+2020.06.21
-- Updated to latest commit
-- Dropped cryptolib in favour of pycryptodome
-
-+2020.03.05
-- Updated to latest commit
-
-+2020.01.28
-- Updated to latest upstream commit
-- Tweaks for import errors for Python 3</news>
++2020.08.09
+- Update to latest upstream commit
+- Futures module is not set to optional (on Kodi 19 it is not imported)</news>
   </extension>
 </addon>
 
@@ -447,7 +441,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.6" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.8" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>
@@ -465,7 +459,10 @@
         <summary lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju.</summary>
         <summary lang="el_GR">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi.</summary>
         <description lang="en_GB">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+        <description lang="el_GR">Επίλυση συνδέσμων κοινών εξυπηρετητών σε μορφή βίντεο ικανό για αναπαραγωγή στο XBMC/Kodi, απλοποίηση της ανάπτυξης των προσθέτων που χρησιμοποιούν πολλαπλούς εξυπηρετητές για υλικό βίντεο</description>
         <description lang="hr_HR">Prilagodi najčešće URL-ove video izvora kako bi radili u XBMC/Kodiju, pojednostavnjuje razvoj priključaka za video dodatke koji zahtjevaju višestruke video izvore.</description>
+        <disclaimer lang="en_GB">This script only resolves video content from legitimate file lockers without prejudice. If this script is being used by 3rd parties to resolve content that you feel infringes upon your Intellectual Property then please take your complaints to the actual website or developer linking to such content and not here. This script in no way searches for any content whatsoever.</disclaimer>
+        <disclaimer lang="el_GR">Το ανωτέρο σενάριο το μόνο που κάνει είναι να επιλύει οπτικοακουστικό περιεχόμενο από νόμιμες πηγές χωρίς προκατάληψη. Εάν το ανωτέρο σενάριο χρησιμοποιηθεί από τρίτους ώστε να επιλύσει περιεχόμενο το οποίο σας προκαλεί αντίδραση ότι παραβιάζει την πνευματική σας ιδιοκτησία παρακαλώ μεταφέρετε τα παραπονά σας στον ιστότοπο τον οποίο βρίσκεται το εν λόγω περιεχόμενο η τον δημιουργό ο οποίος πραγματοποιεί την σύνδεση και όχι εδω. Το σενάριο αυτό ουδεμία περίπτωση πραγματοποιεί αναζήτηση περιεχομένου.</disclaimer>
         <assets>
             <icon>icon.png</icon>
             <fanart>fanart.jpg</fanart>
@@ -512,6 +509,19 @@
             <icon>icon.png</icon>
         </assets>
 	</extension>
+</addon>
+
+<addon id="script.module.futures" name="Futures dummy" version="0.0.0.1" provider-name="Twilight0">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib"/>
+  <extension point="xbmc.addon.metadata">
+    <summary>Futures dummy</summary>
+    <description>Futures dummy</description>
+    <platform>all</platform>
+    <license>BSD</license>
+  </extension>
 </addon>
 
 <addon id="script.module.pyjsparser" name="pyjsparser" version="2.7.2" provider-name="Addons4Kodi">
@@ -675,7 +685,7 @@
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.6.15" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.6.17" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.python" version="2.24.0"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -699,6 +709,8 @@
 - Add integer labels as optional parameters
 - Moved a few functions from client to other modules
 - Added the quote paths function, useful for non ascii characters in urls
+- Fix in url_dispatcher module
+- Added a few functions into control module
 - A few changes for Kodi 19+
 
 [B]2.5.X[/B]
@@ -725,7 +737,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.6" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.8" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" version="0.0.1"/>
