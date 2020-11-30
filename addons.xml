@@ -505,7 +505,7 @@ v1.0.25 (marcelveldt)
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.13" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.15" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
@@ -607,7 +607,7 @@ v1.0.25 (marcelveldt)
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl.xxx" version="2.1.4" name="Adult Resolver SMR Extension" provider-name="gujal">
+<addon id="script.module.resolveurl.xxx" version="2.1.5" name="Adult Resolver SMR Extension" provider-name="gujal">
 	<requires>
 		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
         <import addon="script.module.resolveurl" version="5.0.0" />
@@ -750,9 +750,9 @@ v1.0.25 (marcelveldt)
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.7.4" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.8.1" provider-name="Twilight0">
     <requires>
-        <import addon="xbmc.python" version="2.24.0"/>
+        <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -762,25 +762,15 @@ v1.0.25 (marcelveldt)
         <platform>all</platform>
         <license>GPL-3.0-only</license>
         <source>https://github.com/Twilight0/script.module.tulip</source>
-        <news>[B]2.7.X[/B]
-- New cache functions (taken from ResolveURL and adapted)
-- Various other tweaks
+        <news>[B]2.8.X[/B]
+- Replaced xbmc.python import with xbmc.addon for Matrix compatibility
+- New utils module
+- Updated user agent strings
+- Updated m3u8 modules
 
-[B]2.6.X[/B]
-- Removed cloudflare related functions as they need too frequent updates
-- Improved parsers module
-- Added feed parser &amp; thumbmaker into youtube module
-- Logging module tweaks
-- Updated user agents
-- Allow some modules to be used outside of Kodi as standalone ones
-- Allow nextitem to have title and/or name property
-- Add ability to clear all bookmarks at once
-- Add integer labels as optional parameters
-- Moved a few functions from client to other modules
-- Added the quote paths function, useful for non ascii characters in urls
-- Fix in url_dispatcher module
-- Added a few functions into control module
-- A few changes for Kodi 19+</news>
+[B]2.7.X[/B]
+- New cache functions (taken from ResolveURL and adapted)
+- Various other tweaks</news>
     </extension>
 </addon>
 
@@ -798,7 +788,7 @@ v1.0.25 (marcelveldt)
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.13" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="5.1.15" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
