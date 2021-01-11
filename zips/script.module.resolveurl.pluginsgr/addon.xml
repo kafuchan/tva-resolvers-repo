@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addon id="script.module.resolveurl.pluginsgr" version="0.0.3" name="PluginsGR" provider-name="Twilight0">
+	<requires>
+		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
+        <import addon="script.module.resolveurl" version="5.1.17" />
+	</requires>
+	<extension point="xbmc.python.module" library="resources/plugins" />
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Main resolvers, useful for converting html/js into playable content from various hosts (Greek ones).</summary>
+		<description lang="en">Main resolvers, useful for converting html/js into playable content from various hosts (Greek ones).</description>
+		<platform>all</platform>
+		<news>Version 0.0.3 (January 05, 2021)
+- Updated alphacy
+
+Version 0.0.2 (January 04, 2021)
+
+- Updated star
+- Updated ert
+
+Version 0.0.1 (January 04, 2021)
+
+- Initial version</news>
+	</extension>
+</addon>
