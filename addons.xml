@@ -178,12 +178,12 @@
   </extension>
 </addon>
 
-<addon id="script.module.metadatautils" name="Metadata and Artwork module" version="1.0.35" provider-name="marcelveldt and others">
+<addon id="script.module.metadatautils" name="Metadata and Artwork module" version="1.0.35.1" provider-name="marcelveldt and others">
     <requires>
-        <import addon="xbmc.python" version="2.26.0"/>
+        <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.requests" version="2.3.0"/>
-        <import addon="script.module.beautifulsoup4" version="4.0.0"/>
-        <import addon="script.module.thetvdb" version="0.0.1"/>
+        <import addon="script.module.beautifulsoup4" version="4.0.0" />
+        <import addon="script.module.thetvdb" version="0.0.1" />
         <import addon="script.module.musicbrainz" version="0.0.1"/>
         <import addon="script.module.simplecache" version="1.0.0"/>
         <import addon="script.module.arrow" version="0.6.0"/>
@@ -442,34 +442,38 @@ v1.0.25 (marcelveldt)
   </extension>
 </addon>
 
-<addon id="script.module.metahandler"
-     name="metahandler"
-     version="3.0.2"
-     provider-name="Eldorado, jsergio">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0" />
-    <import addon="script.module.simplejson" version="3.3.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="script.module.myconnpy" version="1.1.6"/>
-  </requires>
-  <extension point="xbmc.python.module" library="lib" />
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
-    <description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
-    <disclaimer lang="en"></disclaimer>
-    <language></language>
-    <platform>all</platform>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum></forum>
-    <website></website>
-    <email></email>
-    <source></source>
-  </extension>
+<addon id="script.module.metahandler" name="metahandler" version="3.99.03" provider-name="Eldorado">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0" />
+		<import addon="script.module.simplejson" version="3.3.0" />
+		<import addon="script.module.addon.common" version="2.0.0" />
+		<import addon="script.module.myconnpy" version="1.1.6" />
+	</requires>
+	<extension point="xbmc.python.module" library="lib" />
+	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
+	<extension point="xbmc.addon.metadata">
+		<platform>all</platform>
+		<summary lang="en">Downloads Artwork for TV shows, Movies and Music videos for addons and stores them in a local SQLITE database</summary>
+		<description lang="en">Queries, stores, and returns metadata for TV shows, Movies and Musicvideos. [CR]Sources:[CR]www.thetvdb.com[CR]www.themoviedb.org[CR]www.imdb.com[CR]www.omdbapi.com[CR]This product uses the TMDb API but is not endorsed or certified by TMDb.</description>
+		<disclaimer lang="en"></disclaimer>
+		<language></language>
+		<license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+		<forum></forum>
+		<website></website>
+		<email></email>
+		<source></source>
+		<assets>
+			<icon>icon.png</icon>
+			<fanart></fanart>
+			<screenshot></screenshot>
+		</assets>
+		<news></news>
+	</extension>
 </addon>
 
-<addon id="script.module.jsbeautifier" name="jsbeautifier" version="1.8.8" provider-name="jsergio">
+<addon id="script.module.jsbeautifier" name="Jsbeautifier" version="1.10.3.1" provider-name="jsbeautifier">
     <requires>
-        <import addon="xbmc.python" version="2.14.0"/>
+        <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.six" version="1.6.1" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -505,14 +509,13 @@ v1.0.25 (marcelveldt)
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.22" provider-name="gujal">
+<addon id="script.module.resolveurl" name="ResolveURL" version="5.1.27" provider-name="gujal">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
@@ -576,9 +579,9 @@ v1.0.25 (marcelveldt)
 	</extension>
 </addon>
 
-<addon id="script.module.futures" name="Futures dummy" version="0.0.0.1" provider-name="Twilight0">
+<addon id="script.module.futures" name="Futures dummy" version="0.0.0.2" provider-name="Twilight0">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="xbmc.addon" version="16.1.000"/>
   </requires>
   <extension point="xbmc.python.module" library="lib"/>
   <extension point="xbmc.addon.metadata">
@@ -637,10 +640,10 @@ Version 0.0.1 (January 04, 2021)
   </extension>
 </addon>
 
-<addon id="script.module.resolveurl.xxx" version="2.1.8" name="Adult Resolver SMR Extension" provider-name="gujal">
+<addon id="script.module.resolveurl.xxx" version="2.1.12" name="Adult Resolver SMR Extension" provider-name="gujal">
 	<requires>
 		<!-- <import addon="xbmc.python" version="2.1.0"/> -->
-        <import addon="script.module.resolveurl" version="5.0.0" />
+        <import addon="script.module.resolveurl" version="5.1.0" />
 	</requires>
 	<extension point="xbmc.python.module" library="lib" />
 	<extension point="xbmc.addon.metadata">
@@ -780,7 +783,7 @@ Version 0.0.1 (January 04, 2021)
   </extension>
 </addon>
 
-<addon id="script.module.tulip" name="Tulip Library" version="2.8.4" provider-name="Twilight0">
+<addon id="script.module.tulip" name="Tulip Library" version="2.8.9" provider-name="Twilight0">
     <requires>
         <import addon="xbmc.addon" version="16.1.000"/>
         <import addon="script.module.kodi-six" version="0.0.2"/>
@@ -823,16 +826,14 @@ Version 0.0.1 (January 04, 2021)
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="5.1.22" provider-name="tvaddons">
+<addon id="script.module.urlresolver" name="URLResolver" version="6.0.0" provider-name="tvaddons">
     <requires>
         <!-- <import addon="xbmc.python" version="3.0.0" /> -->
         <import addon="script.module.six" />
         <import addon="script.module.kodi-six" />
         <import addon="plugin.video.youtube" optional="true" />
         <import addon="script.module.python.twitch" optional="true" />
-        <import addon="script.module.cryptopy" version="1.2.6" optional="true" />
         <import addon="plugin.googledrive" optional="true" />
-        <import addon="plugin.program.indigo" />
     </requires>
     <extension point="xbmc.python.module" library="lib" />
     <extension point="xbmc.python.pluginsource" library="lib/default.py" />
